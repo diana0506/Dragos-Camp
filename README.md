@@ -1,2 +1,2 @@
-# Dragos-Camp
+FunActivities
 A site of season camping
