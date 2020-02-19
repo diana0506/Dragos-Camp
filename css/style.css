@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+}
+
+.header {
+    height: 95vh;
+    /* background-image: linear-gradient(to left bottom, rgba(52, 56, 57, 0.74), rgba(33, 149, 243, 0.74)), url(../img/Kids-club-01.jpg); */
+    background-image: url(../img/Kids-club-01.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 00 100%);
+    /* position: relative; */
+}
+
+
+/* .logo-box {
+    position: absolute;
+}
+
+.logo {
+    height:3.5rem;
+} */
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: right;
+}
+
+.heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 400;
+    animation-name: moveInFleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInFleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.text-box .text-box__actions {
+    display: flex;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem .10rem rgba(0, 0, 0, .2);
+}
+
+.btn-blue {
+    background-color: #2196F3;
+    color: #343839;
+    margin: 0.8rem;
+}
+
+.btn-red {
+    background-color: #F44336;
+    color: #343839;
+    margin: 0.8rem;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-blue::after {
+    background: #2196F3;
+}
+
+.btn-red::after {
+    background: #F44336;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
