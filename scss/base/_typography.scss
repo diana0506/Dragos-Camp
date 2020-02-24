@@ -29,9 +29,12 @@ body {
     }
 }
 
-.heading-secondary {
+.headline {
     font-size: 3.5rem;
-    text-transform: $sue-font-family;
+    font-family: $sue-font-family;
     font-weight: 700;
-    background-image: linear-gradient(to right, $color-red-500, $color-red-600);
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-red-500, $color-black);
+    -webkit-background-clip: text;
+    color: transparent;
 }
