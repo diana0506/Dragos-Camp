@@ -1,0 +1,11 @@
+@font-face {
+    font-family: '#{$sue-font-family}';
+    src : url('#{$sue-font-path}/#{$sue-font-family}.eot?jfu6op');
+    src : url('#{$sue-font-path}/#{$sue-font-family}.eot?jfu6op#iefix') format('embedded-opentype'),
+    url('#{$sue-font-path}/#{$sue-font-family}.ttf?jfu6op') format('truetype'),
+    url('#{$sue-font-path}/#{$sue-font-family}.woff?jfu6op') format('woff'),
+    url('#{$sue-font-path}/#{$sue-font-family}.svg?jfu6op##{$sue-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
