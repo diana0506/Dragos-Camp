@@ -1,0 +1,32 @@
+{
+    "liveSassCompile.settings.formats": [{
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/css"
+    }],
+
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+
+    "liveSassCompile.settings.includeItems": [
+        "scss/main.scss"
+    ],
+    "git.autofetch": true,
+    "eslint.autoFixOnSave": false,
+    "eslint._legacyModuleResolve": true,
+    "eslint.alwaysShowStatus": true,
+    "window.zoomLevel": 1,
+    "breadcrumbs.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "OS X Flat Dark"
+}

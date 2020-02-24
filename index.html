@@ -12,7 +12,8 @@
     <title>FunActivities</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="navigation">
-        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
@@ -39,24 +40,60 @@
 
     </div>
     <header class="header">
-        <div class="logo-box">
-            <img src="#" alt="Logo" class="logo">
+        <!-- <img src="img/slider/slider-01.jpg" alt="" class="slider__img">
+        <img src="img/slider/slider-02.jpg" alt="" class="slider__img"> -->
+
+        <div class="header__logo-box">
+            <img src="img/logo.png" alt="Logo" class="header__logo">
         </div>
 
-        <div class="text-box">
+        <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary-main">Noul sezon de tabara</span>
-                <span class="heading-primary-sub">Incepe in februarie</span>
+                <span class="heading-primary--main">Noul sezon de tabara</span>
+                <span class="heading-primary--sub">Incepe in februarie</span>
             </h1>
             <div class="text-box__action">
-                <a href="#" class="btn btn-red btn-animated">Citeste mai mult</a>
-                <a href="#" class="btn btn-blue btn-animated">Verifica calendarul</a>
+                <a href="#" class="btn btn--orange btn--animated">Citeste mai mult</a>
+                <a href="#" class="btn btn--blue btn--animated">Verifica calendarul</a>
+            </div>
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Noul sezon de tabara</span>
+                <span class="heading-primary--sub">Incepe in martie</span>
+            </h1>
+            <div class="text-box__action">
+                <a href="#" class="btn btn--orange btn--animated">Citeste mai mult</a>
+                <a href="#" class="btn btn--blue btn--animated">Verifica calendarul</a>
             </div>
         </div>
 
     </header>
 
+    <main>
+        <div class="section-about">
+            <div class="u-left-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Abordarea noastra
+                </h2>
+            </div>
+            <div class="u-middle-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Skill-urile profesorilor
+                </h2>
+            </div>
+            <div class="u-right-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Sport si sanatate
+                </h2>
+            </div>
+        </div>
 
+
+    </main>
+
+    <script src="js/slider.js"></script>
     <script src="" async defer></script>
 </body>
 
