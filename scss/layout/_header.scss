@@ -1,8 +1,9 @@
 .header {
     height: 95vh;
     // background-image: url(../img/Kids-club-01.jpg);
-    // background-size: cover;
-    // background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 00 100%);
     position: relative;
     &__logo-box {

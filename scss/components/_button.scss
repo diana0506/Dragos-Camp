@@ -50,6 +50,14 @@
             background-color: $color-red-primary;
         }
     }
+    &--white {
+        background-color: $color-white;
+        color: $color-black;
+        margin: 0.8rem;
+        &::after {
+            background-color: $color-white;
+        }
+    }
     &::after {
         content: "";
         display: inline-block;
